@@ -1,4 +1,4 @@
-import 'package:flutter/foundation.dart';
+import 'package:meta/meta.dart' show visibleForTesting;
 import 'package:flutter/services.dart';
 
 import 'package:sunmi_printer_plus/sunmi_printer_plus.dart';
