@@ -1,26 +1,53 @@
+# sunmi_printer_plus (maintained fork)
 
-# Sunmi printer 4.0.0
+> **This is a maintained fork of [brasizza/sunmi_printer](https://github.com/brasizza/sunmi_printer).**  
+> The fork is maintained by [@abellido](https://github.com/abellido) with dependency upgrades, new features and bug fixes targeting Sunmi devices.
+>
+> **Branch status:**
+> - `master` — mirrors the production-ready `version-4.0` branch plus documentation updates (this branch).
+> - `version-4.0` — the active production branch where development takes place. If you are consuming the package directly from this repository, point your dependency to this branch.
 
-Package Sunmi printer will support all sunmi devices with different behaviours
+---
 
 ## Important
 
-THIS PACKAGE WILL WORK ONLY IN ANDROID!
+**THIS PACKAGE WILL WORK ONLY IN ANDROID!**
 
-This flutter plugin based  Official Sunmi Inner Printer Doc using the latest implementation libs [Documentation](https://developer.sunmi.com/docs/en-US/xeghjk491/mafeghjk535)
-
-You can help me out to keep this package updated!
-[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/donate?business=5BMWJ9CYNVDAE&no_recurring=0&currency_code=BRL)
+This Flutter plugin is based on the Official Sunmi Inner Printer documentation using the latest implementation libs: [Sunmi Developer Documentation](https://developer.sunmi.com/docs/en-US/xeghjk491/mafeghjk535).
 
 ## Installation
 
-```bash
- flutter pub add sunmi_printer_plus
+Add the package to your `pubspec.yaml`.  
+If you consume it from **pub.dev** (when published):
+
+```yaml
+dependencies:
+  sunmi_printer_plus: ^4.1.1
 ```
 
-# Should be a bit break change between versions below 4.0
+Or install it via the Flutter CLI:
 
-## What this package do
+```bash
+flutter pub add sunmi_printer_plus
+```
+
+To consume directly from this fork (recommended while pub.dev is not updated):
+
+```yaml
+dependencies:
+  sunmi_printer_plus:
+    git:
+      url: https://github.com/abellido/sunmi_printer.git
+      ref: version-4.0
+```
+
+Then run:
+
+```bash
+flutter pub get
+```
+
+## What this package does
 - [x] Write some text (with style or not!)
 - [x] Change font size
 - [x] Jump (n) lines
@@ -40,8 +67,17 @@ You can help me out to keep this package updated!
 - [x] Open de cash drawer 
 - [x] Check if the cash drawer is open of close
 
-# You can run the project cloning the repository below
-[Repository](https://github.com/brasizza/sunmi_printer.git) - then change branch to **version-4.0**
+# Run the example project
+
+Clone this fork and switch to the `version-4.0` branch:
+
+```bash
+git clone https://github.com/abellido/sunmi_printer.git
+cd sunmi_printer
+git checkout version-4.0
+cd example && flutter run
+```
+
 ![Logo](https://github.com/brasizza/sunmi_printer/blob/version-4.0/doc/screen.png?raw=true)
 
 ## Deprecated Methods (`@Deprecated`)
@@ -202,3 +238,20 @@ enum SunmiLCDStatus {
   CLEAR,
 }
 ```
+
+---
+
+## Fork notice / Attribution
+
+This repository is a maintained fork of [brasizza/sunmi_printer](https://github.com/brasizza/sunmi_printer), originally created and licensed by **Tan Zi Gang** and contributors under the **BSD 3-Clause License**.
+
+All original copyright notices are preserved in the `LICENSE` file. The fork introduces dependency upgrades, code refactors, new printer/drawer methods, and improved documentation. See `CHANGELOG.md` for details.
+
+Upstream repository: <https://github.com/brasizza/sunmi_printer>  
+License: [BSD 3-Clause](./LICENSE)
+
+---
+
+## License
+
+BSD 3-Clause License. See [LICENSE](./LICENSE) for the full text.

@@ -1,5 +1,15 @@
 
 # Changelog
+
+## [Unreleased] – fork sync 2026-04-09
+### Added
+- `NOTICE` file with upstream attribution and copyright details.
+- Updated `README.md` to clearly state this is a maintained fork of
+  [brasizza/sunmi_printer](https://github.com/brasizza/sunmi_printer),
+  with installation instructions and a Fork Notice / Attribution section.
+- `master` branch now tracks the production-ready code from `version-4.0`.
+  `version-4.0` remains the active development branch and is unmodified.
+
 ## 4.1.0#
 Improve doc, remove IOS needs and make a few changes in code trying to maintain compatible as possible with 3.0.0
 
