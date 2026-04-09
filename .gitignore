@@ -3,3 +3,5 @@ android/local.properties
 .DS_Store
 .DS_Store?
 **/.DS_Store
+.dart_tool/
+doc/api/
